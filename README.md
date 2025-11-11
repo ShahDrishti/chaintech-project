@@ -59,8 +59,8 @@ It demonstrates secure registration, login, a welcoming home page, and robust ac
 1. **Clone the repository**
 
    ```
-   git clone https://github.com/YOUR-USERNAME/react-account-management-app.git
-   cd react-account-management-app
+   git clone https://github.com/ShahDrishti/chaintech-project.git
+   cd chaintech-project
    ```
 
 2. **Install dependencies**
