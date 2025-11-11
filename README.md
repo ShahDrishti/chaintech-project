@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# React Account Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, clean account management application built with React 19, React Router v6, and React Bootstrap 2.  
+It demonstrates secure registration, login, a welcoming home page, and robust account update—all with full validation and helpful UI feedback.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Registration:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - Collects Name, Email, Phone, Age, Gender and Password
+  - Inline validation for format and requirements (all fields required)
+  - Real-time errors and red asterisks for mandatory fields
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Login:**
 
-### `npm test`
+  - Email and password authentication
+  - Disabled button until valid
+  - All invalid fields are highlighted when the user attempts to login/register
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Home Page:**
 
-### `npm run build`
+  - Greets user by name after login/registration
+  - Shows a profile info summary and allows account updates
+  - Success notification is shown after profile updates
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Account Update:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - Edit any profile field, including email and password
+  - If email or password is changed, user is logged out and must log in again
+  - Minor updates return user to home with notification
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Navigation:**
 
-### `npm run eject`
+  - Responsive Bootstrap navbar with links for navigation and user context (signed-in status)
+  - Conditional rendering based on authentication state
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Form & App-Level Error Handling:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - All validation is explicit (user cannot bypass via forms or button behavior)
+  - Error boundaries ensure app stays usable even if something breaks
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Styling:**
+  - Fully responsive; looks appealing on both desktop and mobile
+  - Uses Bootstrap utilities and React Bootstrap components only (minimal custom CSS unless user adds)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Node.js](https://nodejs.org/) v18+ recommended
+- `npm` (shipped with Node.js)
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Clone the repository**
 
-### Analyzing the Bundle Size
+   ```
+   git clone https://github.com/YOUR-USERNAME/react-account-management-app.git
+   cd react-account-management-app
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Install dependencies**
 
-### Making a Progressive Web App
+   ```
+   npm install
+   npm install bootstrap react-bootstrap (for styling)
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. **Run the application**
+   ```
+   npm start
+   ```
 
-### Advanced Configuration
+- Visit [http://localhost:3000](http://localhost:3000) in your browser
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
